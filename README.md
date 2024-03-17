@@ -4,7 +4,7 @@ The purpose of this repository is to test some technologies with `Go`.
 
 # Roadmap
 
-[] Kafka
+[x] Kafka
 [] NATS
 [] Redis
 [] OpenTelemetry w Jagger
