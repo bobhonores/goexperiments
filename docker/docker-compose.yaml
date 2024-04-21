@@ -38,3 +38,9 @@ services:
     environment:
       KAFKA_CLUSTERS_0_NAME: local
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: broker:52853
+  nats:
+    container_name: nats
+    image: nats
+    ports:
+      - 4222:4222
+      - 8222:8222
