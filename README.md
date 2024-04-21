@@ -6,6 +6,10 @@ The purpose of this repository is to test some technologies with `Go`.
 
 - [x] Kafka
 - [ ] NATS
+  - [x] Pub/Sub
+  - [ ] Request/Response
+  - [ ] Queue Groups
+  - [ ] JetStream
 - [ ] Redis
 - [ ] OpenTelemetry w Jagger
 - [ ] Seq
