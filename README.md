@@ -10,7 +10,10 @@ The purpose of this repository is to test some technologies with `Go`.
   - [ ] Request/Response
   - [ ] Queue Groups
   - [ ] JetStream
+- [x] Murmur Hash
 - [ ] Redis
+- [ ] Valkey
+- [ ] InfluxDB
 - [ ] OpenTelemetry w Jagger
 - [ ] Seq
 - [ ] Apache Casandra
