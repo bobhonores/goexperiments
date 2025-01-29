@@ -12,6 +12,7 @@ The purpose of this repository is to test some technologies with `Go`.
   - [ ] JetStream
 - [x] Murmur Hash
 - [ ] Redis
+  - [x] Get/Set
 - [ ] Valkey
 - [ ] InfluxDB
 - [ ] OpenTelemetry w Jagger

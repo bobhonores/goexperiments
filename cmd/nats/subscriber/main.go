@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"os/signal"
 	"syscall"
@@ -17,9 +18,14 @@ func main() {
 	c, _ := nats.NewEncodedConn(nc, nats.JSON_ENCODER)
 	defer nc.Drain()
 
-	c.Subscribe("demo", func(t *nt.Temperature) {
+	_, err := c.Subscribe("demo", func(t *nt.Temperature) {
 		fmt.Printf("Received temperature: %v%v at %v\n", t.Degrees, t.Scale, time.Now())
 	})
+
+	if err != nil {
+		log.Fatalf("Error when subscribing: %v", err)
+		return
+	}
 
 	sigchan := make(chan os.Signal, 1)
 	signal.Notify(sigchan, syscall.SIGINT, syscall.SIGTERM)

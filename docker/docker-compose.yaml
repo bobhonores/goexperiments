@@ -44,3 +44,9 @@ services:
     ports:
       - 4222:4222
       - 8222:8222
+  redis:
+    container_name: redis
+    image: redis/redis-stack:latest
+    ports:
+      - 6379:6379
+      - 8001:8001
